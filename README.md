@@ -1,7 +1,7 @@
 # :wave: <ins>**Tiger-Connect**</ins> :nerd_face:
 ### <ins>_(Assignment - Sr. DevOps Engineer)_</ins>
 
-![alt text](https://github.com/Censius-Assessments/devops-takehome-task-Ashuv786/blob/main/My_Architecture_Board.jpg?raw=true)
+![alt text](https://github.com/Ashuv786/tiger_connect/blob/main/My_Architecture_Board.jpg?raw=true)
 
 ## :radioactive: **Infra_Overview !**
 1. VPC
