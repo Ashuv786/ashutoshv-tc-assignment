@@ -1,3 +1,5 @@
+/* Autoscaling preferences ! */
+
 /* the number of containers will be reduced (but not below ecs_autoscale_min_instances). */
 variable "ecs_as_cpu_low_threshold_per" {
   default = "20"

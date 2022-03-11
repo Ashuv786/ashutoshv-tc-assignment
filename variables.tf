@@ -19,10 +19,12 @@ variable "az_count" {
 variable "health_check" {
   default = "/"
 }
+
+# Default tags for whole infra
 variable "default_tags" {
   type = map(any)
   default = {
-    "company_name" : "xyz"
+    "company_name" : "tiger-connect"
     "business_unit" : "IT"
     "support_email" : "abc@xyz.com"
   }
