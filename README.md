@@ -9,6 +9,7 @@
 3. ECS Cluster
 4. RDS
 5. Route 53
+6. CloudWatch Logging
 
 (All above resources obey standard HA architecture principles)
 
@@ -33,8 +34,9 @@
 
 
 ## :thought_balloon: **Final Points !**
-* **CICD** should be involved
-* **K8s** should be used to run whole infra
+* **CICD** could be involved to further automate the deployment
+* **Parameters** can be used to use this same script over several infra
+* **Observability** needs a large improvement
 
 ###
 ### This solution <ins>could be evolved</ins> further with time & thoughts.
