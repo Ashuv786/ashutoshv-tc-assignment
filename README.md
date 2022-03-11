@@ -28,14 +28,14 @@
 5. **Multi-layering:**
    * This must be used while in prod
    * For example:
-     * network layer - vpc, route53, etc
-     * computer layer - ecs
-     * RDS layer - DB, etc
+     * network layer - VPC, Route53, etc...
+     * computer layer - ECS
+     * RDS layer - DB, etc...
 
 
 ## :thought_balloon: **Final Points !**
 * **CICD** could be involved to further automate the deployment
-* **Parameters** can be used to use this same script over several infra
+* **More Parameters** could be used for re-usability over several infra
 * **Observability** needs a large improvement
 
 ###
