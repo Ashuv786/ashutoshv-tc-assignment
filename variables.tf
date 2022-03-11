@@ -4,7 +4,7 @@
 
 variable "aws_region" {
   type    = string
-  default = "ap-south-1"
+  default = "us-east-1"
 }
 
 variable "vpc_cidr" {
@@ -20,28 +20,25 @@ variable "health_check" {
   default = "/"
 }
 
-# Default tags for whole infra
+# Default common tags for whole infra
 variable "default_tags" {
   type = map(any)
   default = {
     "company_name" : "tiger-connect"
     "business_unit" : "IT"
-    "support_email" : "abc@xyz.com"
+    "support_email" : "infra_admin@tigerconnect.com"
   }
 }
-
 
 variable "key_name" {
   type    = string
   default = "lamp"
 }
 
-
 variable "multi_az_db" {
   type    = bool
   default = true
 }
-
 
 variable "replicas" {
   default = "1"
@@ -65,9 +62,8 @@ variable "ecs_autoscale_max_instances" {
 
 # default Docker image Replace with your actual image
 variable "default_backend_image" {
-  default = "dash27/simple-devops-image"
+  default = "dash27/simple-devops-image" # (Using a dummy application and should be modified)
 }
-
 
 # Container Port where application is exposed
 variable "container_port" {

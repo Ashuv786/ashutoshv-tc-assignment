@@ -11,7 +11,7 @@ resource "aws_route53_zone" "my-play-zone" {
   }, var.default_tags)
 }
 
-/* "A" Record Creation */
+/* Record-type "A" Creation */
 resource "aws_route53_record" "my-example-record" {
   zone_id = aws_route53_zone.my-play-zone.id
   name    = "my-example-record-${terraform.workspace}"

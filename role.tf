@@ -1,4 +1,6 @@
-/* creates an application role that the container/task runs as */
+/*
+  Creates an application role that the container/task runs as
+*/
 resource "aws_iam_role" "app_role" {
   name               = "app-${terraform.workspace}"
   assume_role_policy = data.aws_iam_policy_document.app_role_assume_role_policy.json
