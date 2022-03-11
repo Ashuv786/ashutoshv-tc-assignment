@@ -13,7 +13,7 @@ resource "aws_db_instance" "database" {
   password             = "ecsdb1234"
   db_subnet_group_name = aws_db_subnet_group.databasegroup.name
   parameter_group_name = "default.mysql5.7"
-  /* availability_zone = data.aws_availability_zones.available.zone_ids[0] */       # (Optional) Should be used in prod
+  /* availability_zone = data.aws_availability_zones.available.zone_ids[0] */ # (Optional) Should be used in prod
   vpc_security_group_ids = [aws_security_group.dbsg.id]
   skip_final_snapshot    = true
   identifier             = "ecsdbdb"
