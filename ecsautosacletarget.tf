@@ -1,4 +1,7 @@
-/* Defining ECS Auto-scaling targets */
+/*
+  Defining ECS Auto-scaling targets
+*/
+
 resource "aws_appautoscaling_target" "app_scale_target" {
   service_namespace  = "ecs"
   resource_id        = "service/${aws_ecs_cluster.app.name}/${aws_ecs_service.app.name}"

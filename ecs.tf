@@ -1,4 +1,7 @@
-/* ECS-Cluster Definition */
+/*
+  ECS-Cluster Definition
+*/
+
 resource "aws_ecs_cluster" "app" {
   name = "ecs-${terraform.workspace}"
   setting {

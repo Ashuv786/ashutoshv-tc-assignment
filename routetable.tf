@@ -25,5 +25,3 @@ resource "aws_route_table" "dbroute" {
     Name = "dbroute-${terraform.workspace}"
   }, var.default_tags)
 }
-
-

@@ -60,10 +60,8 @@ resource "aws_ecs_task_definition" "app" {
 ]
 DEFINITION
 
-
   tags = merge(
     {
       "Name" : "app-ecs-taskdef-${terraform.workspace}"
   }, var.default_tags)
 }
-

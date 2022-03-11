@@ -13,7 +13,6 @@ resource "aws_security_group" "dbsg" {
   )
 }
 
-
 resource "aws_security_group_rule" "web_to_db" {
   security_group_id        = aws_security_group.dbsg.id
   type                     = "ingress"
@@ -24,7 +23,6 @@ resource "aws_security_group_rule" "web_to_db" {
 
 }
 
-
 resource "aws_security_group_rule" "db_egress" {
   security_group_id = aws_security_group.dbsg.id
   type              = "egress"
@@ -33,5 +31,3 @@ resource "aws_security_group_rule" "db_egress" {
   protocol          = "-1"
   cidr_blocks       = ["0.0.0.0/0"]
 }
-
-

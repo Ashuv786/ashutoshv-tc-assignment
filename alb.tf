@@ -47,7 +47,7 @@ resource "aws_alb_listener" "listener_http" {
   }
 }
 
-/* ALB URL */
+/* ALB-URL */
 output "alburl" {
   value = aws_lb.alb.dns_name
 }

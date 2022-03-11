@@ -1,10 +1,8 @@
 # For Terraform Remote State Back up 
 .terraform/
+.idea
+
 *.tfstate
 *.backup
 .terraform.lock.hcl
 *.info
-
-keyfile/
-
-.idea

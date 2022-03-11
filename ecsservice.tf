@@ -1,4 +1,7 @@
-/* ECS App Definition */
+/*
+  ECS App Definition
+*/
+
 resource "aws_ecs_service" "app" {
   name            = "app-${terraform.workspace}"
   cluster         = aws_ecs_cluster.app.id
@@ -32,4 +35,3 @@ resource "aws_ecs_service" "app" {
       "Name" : "ECS-service-${terraform.workspace}"
   }, var.default_tags)
 }
-

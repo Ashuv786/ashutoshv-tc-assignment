@@ -13,7 +13,6 @@ resource "aws_security_group" "lbsg" {
   )
 }
 
-
 resource "aws_security_group_rule" "web_to_lb" {
   security_group_id = aws_security_group.lbsg.id
   type              = "ingress"
@@ -23,7 +22,6 @@ resource "aws_security_group_rule" "web_to_lb" {
   cidr_blocks       = ["0.0.0.0/0"]
 
 }
-
 
 resource "aws_security_group_rule" "lb_egress" {
   security_group_id = aws_security_group.lbsg.id

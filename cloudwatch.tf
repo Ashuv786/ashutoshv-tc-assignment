@@ -1,4 +1,7 @@
-/* Cloudwatch Log-group Definition For Storing The ECS Logs */
+/*
+  Cloudwatch Log-group Definition For Storing The ECS Logs
+*/
+
 resource "aws_cloudwatch_log_group" "logs" {
   name              = "/fargate/service/app-${terraform.workspace}"
   retention_in_days = "90"
