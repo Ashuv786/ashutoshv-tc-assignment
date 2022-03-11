@@ -2,8 +2,8 @@
 .terraform/
 *.tfstate
 *.backup
-#  include for scenario of multiple developers
-#.terraform.lock.hcl
+.terraform.lock.hcl
+*.info
 
 keyfile/
 
